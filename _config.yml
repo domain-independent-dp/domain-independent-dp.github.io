@@ -1,0 +1,11 @@
+theme: jekyll-theme-primer
+title: Domain-Independent Dynamic Programming (DIDP)
+description: This is a homepage for Domain-Independent Dynamic Programming (DIDP).
+
+plugins:
+  - jekyll-sitemap
+
+domain: domain-independent-dp.github.io
+url: https://domain-independent-dp.github.io # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /
+repository: domain-independent-dp/domain-independent-dp.github.io

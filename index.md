@@ -31,3 +31,7 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper introduces the notion of DIDP with the modeling language DyPDL and the generic solver CAASDy with the experimental evaluation using 6 combinatorial optimization problems.
 - Ryo Kuroiwa and J. Christopher Beck. [Solving domain-independent dynamic programming problems with anytime heuristic search.](https://tidel.mie.utoronto.ca/pubs/Solving%20Domain%20Independent%20Dynamic%20Programming%20Problems%20with%20Anytime%20Heuristic%20Search.pdf) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023.
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
+
+## Contact Information
+
+Ryo Kuroiwa (ryo.kuroiwa [at] mail.utoronto.ca)

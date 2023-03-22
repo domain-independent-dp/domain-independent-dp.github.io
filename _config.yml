@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: Domain-Independent Dynamic Programming (DIDP)
-description: This is a homepage for Domain-Independent Dynamic Programming (DIDP).
+description: This is the homepage for Domain-Independent Dynamic Programming (DIDP).
 
 plugins:
   - jekyll-sitemap

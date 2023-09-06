@@ -27,18 +27,22 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
 
 ## Papers
 
-- Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming: Generic State Space Search for Combinatorial Optimization.](https://tidel.mie.utoronto.ca/pubs/Domain%20Independent%20Dynamic%20Programming%20Generic%20State%20Space%20Search%20for%20Combinatorial%20Optimization.pdf) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023.
+- Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming: Generic State Space Search for Combinatorial Optimization.](https://ojs.aaai.org/index.php/ICAPS/article/view/27200/26973) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [slides](./pdfs/didp_icaps2023.pdf) [poster](./pdfs/didp_poster_icaps2023.pdf)
   - This paper introduces the notion of DIDP with the modeling language DyPDL and the generic solver CAASDy with the experimental evaluation using 6 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://tidel.mie.utoronto.ca/pubs/Solving%20Domain%20Independent%20Dynamic%20Programming%20Problems%20with%20Anytime%20Heuristic%20Search.pdf) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023.
+- Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://ojs.aaai.org/index.php/ICAPS/article/view/27201/26974) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [slides](./pdfs/anytime_icaps2023.pdf)
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/LNBS_CP23.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023.
+- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/LNBS_CP23.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
 
 ### Papers using DIDP
 
 - Arnoosh Golestanian, Giovanni Lo Bianco, Chengyu Tao, and J. Christopher Beck. [Optimization Models for Pickup and Delivery Problems with Reconfigurable Capacities.](https://tidel.mie.utoronto.ca/pubs/Golestanian_CP2023.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023.
   - DIDP beats MIP and CP in a pickup and delivery problem with complicated capacity constraints inspired by a real-world application.
- 
+
+## Presentations
+
+- [Introduction to DIDP](./pdfs/didp_dpsolve2023.pdf) presented at the [DPSOLVE](https://sites.google.com/view/dpsolve2023/) workshop at CP 2023
+
 ## Contact Information
 
 Ryo Kuroiwa (ryo.kuroiwa [at] mail.utoronto.ca)

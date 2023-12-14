@@ -35,7 +35,7 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
 - Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
-- Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming](https://tidel.mie.utoronto.ca/pubs/aaai24-parallel-camera-ready.pdf) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/aaai24-parallel-camera-ready.pdf) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf)
   - This paper develops multi-thread DIDP solvers based on parallel beam search algorithms.
 
 ### Papers using DIDP

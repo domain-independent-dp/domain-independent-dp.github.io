@@ -21,18 +21,22 @@ All of the above software are managed on [our GitHub repository](https://github.
 We use Dynamic Programming Description Language (DyPDL) as a modeling formalism for DIDP, which is based on state transition systems.
 While it is named "Language", DyPDL is independent from particular programming languages or data formats, and we provide [Python](https://didppy.rtfd.io), [Rust](https://crates.io/crates/dypdl), and [YAML](https://crates.io/crates/didp-yaml) interfaces for it.
 
+We provide Python and YAML models used in a [repository](https://github.com/Kurorororo/didp-models/tree/main).
+
 ## Solvers for DIDP
 
 Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-search) are based on heuristic search such as A* and beam search, inspired by AI planning.
 
 ## Papers
 
-- Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming: Generic State Space Search for Combinatorial Optimization.](https://ojs.aaai.org/index.php/ICAPS/article/view/27200/26973) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [slides](./pdfs/didp_icaps2023.pdf) [poster](./pdfs/didp_poster_icaps2023.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming: Generic State Space Search for Combinatorial Optimization.](https://ojs.aaai.org/index.php/ICAPS/article/view/27200/26973) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_CAASDy_ICAPS23.pdf) [slides](./pdfs/didp_icaps2023.pdf) [poster](./pdfs/didp_poster_icaps2023.pdf)
   - This paper introduces the notion of DIDP with the modeling language DyPDL and the generic solver CAASDy with the experimental evaluation using 6 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://ojs.aaai.org/index.php/ICAPS/article/view/27201/26974) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [slides](./pdfs/anytime_icaps2023.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://ojs.aaai.org/index.php/ICAPS/article/view/27201/26974) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Anytime_ICAPS23.pdf) [slides](./pdfs/anytime_icaps2023.pdf)
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
 - Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
+- Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming](https://tidel.mie.utoronto.ca/pubs/aaai24-parallel-camera-ready.pdf) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf)
+  - This paper develops multi-thread DIDP solvers based on parallel beam search algorithms.
 
 ### Papers using DIDP
 

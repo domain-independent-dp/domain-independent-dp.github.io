@@ -21,7 +21,7 @@ All of the above software are managed on [our GitHub repository](https://github.
 We use Dynamic Programming Description Language (DyPDL) as a modeling formalism for DIDP, which is based on state transition systems.
 While it is named "Language", DyPDL is independent from particular programming languages or data formats, and we provide [Python](https://didppy.rtfd.io), [Rust](https://crates.io/crates/dypdl), and [YAML](https://crates.io/crates/didp-yaml) interfaces for it.
 
-We provide Python and YAML models used in a [repository](https://github.com/Kurorororo/didp-models/tree/main).
+We provide Python and YAML models used by our papers in a [repository](https://github.com/Kurorororo/didp-models/tree/main).
 
 ## Solvers for DIDP
 

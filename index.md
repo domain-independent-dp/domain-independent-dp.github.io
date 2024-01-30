@@ -37,6 +37,8 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
 - Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/aaai24-parallel-camera-ready.pdf) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf)
   - This paper develops multi-thread DIDP solvers based on parallel beam search algorithms.
+- Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming](https://arxiv.org/abs/2401.13883)
+  - This paper formally defines and theoretically analyzes DyPDL and heuristic search solvers for DIDP. The experimental evaluation uses 11 combinatorial optimization problems.
 
 ### Papers using DIDP
 

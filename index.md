@@ -33,9 +33,9 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper introduces the notion of DIDP with the modeling language DyPDL and the generic solver CAASDy with the experimental evaluation using 6 combinatorial optimization problems.
 - Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://ojs.aaai.org/index.php/ICAPS/article/view/27201/26974) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Anytime_ICAPS23.pdf) [slides](./pdfs/anytime_icaps2023.pdf)
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) In Proceedings of the 29th International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
-- Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/aaai24-parallel-camera-ready.pdf) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf) [slides](./pdfs/parallel_aaai2024.pdf) [poster](./pdfs/parallel_poster_aaai2024.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming.](https://ojs.aaai.org/index.php/AAAI/article/view/30062/31869) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf) [slides](./pdfs/parallel_aaai2024.pdf) [poster](./pdfs/parallel_poster_aaai2024.pdf)
   - This paper develops multi-thread DIDP solvers based on parallel beam search algorithms.
   - Errata: In Algorithm 8, `|L| < k` should be added in the while loop condition. This condition is used in the implementation but was forgotten in the pseudo-code.  
 - Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming](https://arxiv.org/abs/2401.13883)
@@ -43,8 +43,13 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
 
 ### Papers using DIDP
 
-- Arnoosh Golestanian, Giovanni Lo Bianco, Chengyu Tao, and J. Christopher Beck. [Optimization Models for Pickup and Delivery Problems with Reconfigurable Capacities.](https://tidel.mie.utoronto.ca/pubs/Golestanian_CP2023.pdf) In Proceedings of the 29th  International Conference on Principles and Practice of Constraint Programming (CP). 2023.
+- Arnoosh Golestanian, Giovanni Lo Bianco, Chengyu Tao, and J. Christopher Beck. [Optimization Models for Pickup and Delivery Problems with Reconfigurable Capacities.](https://tidel.mie.utoronto.ca/pubs/Golestanian_CP2023.pdf) In Proceedings of the 29th International Conference on Principles and Practice of Constraint Programming (CP). 2023.
   - DIDP beats MIP and CP in a pickup and delivery problem with complicated capacity constraints inspired by a real-world application.
+- Jiacheng Zhang and J. Christopher Beck. [Solving LBBD Master Problems with Constraint Programming and Domain-Independent Dynamic Programming](https://drops.dagstuhl.de/storage/00lipics/lipics-vol307-cp2024/LIPIcs.CP.2024.32/LIPIcs.CP.2024.32.pdf). In Proceedings of the 30th International COnference on Principles and Practice of Constraint Programming (CP). 2024.
+  - This paper proposes a Bender's decomposition method using DIDP as a master problem formulation.
+- Jiacheng Zhang and J. Christopher Beck. [Domain-Independent Dynamic Programming and Constraint Programming Approaches for Assembly Line Balancing Problems with Setups](https://pubsonline.informs.org/doi/full/10.1287/ijoc.2024.0603). INFORMS Journal on Computing, 2024.
+  - DIDP models for SUALBP-1 and SUALBP-2, variants of assembly line balancing problems, are proposed, and they outperform MIP and CP models.
+
 
 ## Presentations
 

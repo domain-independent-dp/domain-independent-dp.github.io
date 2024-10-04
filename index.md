@@ -57,4 +57,4 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
 
 ## Contact Information
 
-Ryo Kuroiwa (ryo.kuroiwa [at] mail.utoronto.ca)
+Ryo Kuroiwa (kuroiwa [at] nii.ac.jp)

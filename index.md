@@ -16,7 +16,7 @@ To get started, we recommend using [DIDPPy](https://didppy.rtfd.io).
 
 All of the above software are managed on [our GitHub repository](https://github.com/domain-independent-dp/didp-rs).
 
-## Software Using DIDP
+### Software Using DIDP
 
 - [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
 

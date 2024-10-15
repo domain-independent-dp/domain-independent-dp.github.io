@@ -16,12 +16,16 @@ To get started, we recommend using [DIDPPy](https://didppy.rtfd.io).
 
 All of the above software are managed on [our GitHub repository](https://github.com/domain-independent-dp/didp-rs).
 
+## Software Using DIDP
+
+- [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
+
 ## Modeling in DIDP
 
 We use Dynamic Programming Description Language (DyPDL) as a modeling formalism for DIDP, which is based on state transition systems.
 While it is named "Language", DyPDL is independent from particular programming languages or data formats, and we provide [Python](https://didppy.rtfd.io), [Rust](https://crates.io/crates/dypdl), and [YAML](https://crates.io/crates/didp-yaml) interfaces for it.
 
-We provide Python and YAML models used by our papers in a [repository](https://github.com/Kurorororo/didp-models/tree/main).
+We provide Python and YAML models used by our papers in a [repository](https://github.com/Kurorororo/didp-models/tree/main). 
 
 ## Solvers for DIDP
 

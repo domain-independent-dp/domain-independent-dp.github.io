@@ -58,6 +58,7 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
 ## Presentations
 
 - [Introduction to DIDP](./pdfs/didp_dpsolve2023.pdf) presented at the [DPSOLVE](https://sites.google.com/view/dpsolve2023/) workshop at CP 2023
+- [Domain-Independent Dynamic Programming (Japanese)](./pdfs/DIDP-RAOTA-20250310.pdf) presented at [RAOTA](https://orsj.org/raota/#raota9) in March 2025.
 
 ## Contact Information
 

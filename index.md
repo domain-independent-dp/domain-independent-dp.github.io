@@ -47,6 +47,10 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - Errata: In Algorithm 8, `|L| < k` should be added in the while loop condition. This condition is used in the implementation but was forgotten in the pseudo-code.  
 - Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming](https://arxiv.org/abs/2401.13883)
   - This paper formally defines and theoretically analyzes DyPDL and heuristic search solvers for DIDP, extending the two ICAPS papers. The experimental evaluation uses 11 combinatorial optimization problems.
+- Ryo Kuroiwa and J. Christopher Beck. [RPID: Rust Programmable Interface for Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/RPID-CP2025.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
+  - This paper introduces RPID.
+- J. Christopher Beck, Ryo Kuroiwa, Jimmy H.M. Lee, Peter J. Stuckey, and Allen Z. Zhong. [Transition Dominance in Domain-Independent Dynamic Programming.](https://tidel.mie.utoronto.ca/pubs/Transition_Dominance_in_DIDP.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
+  - This paper introduces state functions and the transition dominance interface.
 
 ### Papers using DIDP
 
@@ -56,8 +60,13 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper proposes a Bender's decomposition method using DIDP as a master problem formulation.
 - Jiacheng Zhang and J. Christopher Beck. [Domain-Independent Dynamic Programming and Constraint Programming Approaches for Assembly Line Balancing Problems with Setups](https://pubsonline.informs.org/doi/full/10.1287/ijoc.2024.0603). INFORMS Journal on Computing 2024. [post-print](https://tidel.mie.utoronto.ca/pubs/sualbp_ijoc_postprint.pdf)
   - DIDP models for SUALBP-1 and SUALBP-2, variants of assembly line balancing problems, are proposed, and they outperform MIP and CP models.
-
-
+- Yuxiao Chen, Anubhav Singh, Ryo Kuroiwa, and J. Christopher Beck. [New Exact Methods for Solving Quadratic Traveling Salesman Problem .](https://tidel.mie.utoronto.ca/pubs/QTSP_icaps_2025.pdf) In Proceedings of the 35th International Conference on Automated Planning and Scheduling (ICAPS). 2025.
+  - DIDP models for the quadratic traveling salesman problem (QTSP) are better than MIP, branch-and-cut, and CP in finding better solutions for large-scale instances.
+- Minori Narita, Ryo Kuroiwa, and J. Christopher Beck. [Reinforcement Learning-Based Heuristics to Guide Domain-Independent Dynamic Programming.](https://link.springer.com/chapter/10.1007/978-3-031-95976-9_9) In Integration of Constraint Programming, Artificial Intelligence, and Operations Research. CPAIOR 2025. 2025.
+  - DIDP solvers are combined with reinforcement learning-based heuristic functions to guide search.
+- Daniel Pekar and J. Christopher Beck. [Exact Methods for the Travelling Salesperson Problem with Self-Deleting Graphs.](https://tidel.mie.utoronto.ca/pubs/TSP_SD_CP2025.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
+  - DIDP outperforms MIP and CP in the traveling salesperson problem with self-deleting graphs.
+  
 ## Presentations
 
 - [Introduction to DIDP](./pdfs/didp_dpsolve2023.pdf) presented at the [DPSOLVE](https://sites.google.com/view/dpsolve2023/) workshop at CP 2023

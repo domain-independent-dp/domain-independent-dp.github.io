@@ -17,11 +17,13 @@ To get started, we recommend using [DIDPPy](https://didppy.rtfd.io).
 All of the above software are managed on [our GitHub repository](https://github.com/domain-independent-dp/didp-rs).
 
 - [RPID](https://github.com/domain-independent-dp/rpid): DIDP solver using Rust code as a modeling interface. It requires a user to write a DP model as a Rust program and is faster than didp-rs in general.
-  - DP model code using dypdl and RPID are [published](https://github.com/Kurorororo/didp-rust-model)
+  - DP model code using dypdl and RPID is [published](https://github.com/Kurorororo/didp-rust-model)
 
 ### Software Using DIDP
 
 - [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
+- [didp-models](https://github.com/Kurorororo/didp-models): DIDP model code used in our papers published in 2023 and 2024/
+- [didp-rust-models](https://github.com/Kurorororo/didp-rust-model): DIDP model code in Rust using dypdl and RPID.
 
 ## Modeling in DIDP
 

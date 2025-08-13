@@ -49,7 +49,7 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - Errata: In Algorithm 8, `|L| < k` should be added in the while loop condition. This condition is used in the implementation but was forgotten in the pseudo-code.  
 - Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming](https://arxiv.org/abs/2401.13883)
   - This paper formally defines and theoretically analyzes DyPDL and heuristic search solvers for DIDP, extending the two ICAPS papers. The experimental evaluation uses 11 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [RPID: Rust Programmable Interface for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.23/LIPIcs.CP.2025.23.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
+- Ryo Kuroiwa and J. Christopher Beck. [RPID: Rust Programmable Interface for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.23/LIPIcs.CP.2025.23.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025 [slides](./pdfs/RPID-CP2025.pdf)
   - This paper introduces RPID.
 - J. Christopher Beck, Ryo Kuroiwa, Jimmy H.M. Lee, Peter J. Stuckey, and Allen Z. Zhong. [Transition Dominance in Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.5/LIPIcs.CP.2025.5.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
   - This paper introduces state functions and the transition dominance interface.

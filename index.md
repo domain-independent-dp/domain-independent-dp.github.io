@@ -22,7 +22,7 @@ All of the above software are managed on [our GitHub repository](https://github.
 ### Software Using DIDP
 
 - [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
-- [didp-models](https://github.com/Kurorororo/didp-models): DIDP model code used in our papers published in 2023 and 2024/
+- [didp-models](https://github.com/Kurorororo/didp-models): DIDP model code used in our papers published in 2023 and 2024.
 - [didp-rust-models](https://github.com/Kurorororo/didp-rust-model): DIDP model code in Rust using dypdl and RPID.
 
 ## Modeling in DIDP

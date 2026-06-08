@@ -2,7 +2,7 @@
 
 Domain-Independent Dynamic Programming (DIDP) is a novel model-based paradigm for combinatorial optimization based on dynamic programming (DP).
 In DIDP, once you formulate your problem as a DP model, you can use generic solvers to solve the model, just as in mixed-integer programming (MIP) and constraint programming (CP).
-DIDP shows superior performance to MIP and CP in a number of combinatorial optimization problems including vehicle routing problems (VRPs), packing problems, and scheduling problems (see our [papers](#papers) for detailed evaluations).
+DIDP shows superior performance to MIP and CP in a number of combinatorial optimization problems, including vehicle routing problems (VRPs), packing problems, and scheduling problems (see our [papers](#papers) for detailed evaluations).
 
 ## Software
 
@@ -14,23 +14,26 @@ To get started, we recommend using [DIDPPy](https://didppy.rtfd.io).
 - [dypdl](https://crates.io/crates/dypdl): Rust library for DP modeling.
 - [dypdl-heuristic-search](https://crates.io/crates/dypdl-heuristic-search): Rust library for heuristic search based generic DP solvers.
 
-All of the above software are managed on [our GitHub repository](https://github.com/domain-independent-dp/didp-rs).
+All of the above software is managed on [our GitHub repository](https://github.com/domain-independent-dp/didp-rs).
 
 - [RPID](https://github.com/domain-independent-dp/rpid): DIDP solver using Rust code as a modeling interface. It requires a user to write a DP model as a Rust program and is faster than didp-rs in general.
   - DP model code using dypdl and RPID is [published](https://github.com/Kurorororo/didp-rust-model)
+- [GRID](https://github.com/domain-independent-dp/grid): High-level decalartive modeling interface for vehicle routing problems.
+  - Model code is [published](https://github.com/domain-independent-dp/grid)
 
 ### Software Using DIDP
 
 - [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
 - [didp-models](https://github.com/Kurorororo/didp-models): DIDP model code used in our papers published in 2023 and 2024.
 - [didp-rust-models](https://github.com/Kurorororo/didp-rust-model): DIDP model code in Rust using dypdl and RPID.
+- [grid-models](https://github.com/domain-independent-dp/grid): GRID model code used in the paper.
 
 ## Modeling in DIDP
 
 We use Dynamic Programming Description Language (DyPDL) as a modeling formalism for DIDP, which is based on state transition systems.
 While it is named "Language", DyPDL is independent from particular programming languages or data formats, and we provide [Python](https://didppy.rtfd.io), [Rust](https://crates.io/crates/dypdl), and [YAML](https://crates.io/crates/didp-yaml) interfaces for it.
 
-We provide Python and YAML models used by our papers in a [repository](https://github.com/Kurorororo/didp-models/tree/main). 
+We provide Python and YAML models used by our papers in a [repository](https://github.com/Kurorororo/didp-models/tree/main).
 
 ## Solvers for DIDP
 
@@ -42,23 +45,30 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - This paper introduces the notion of DIDP with the modeling language DyPDL and the generic solver CAASDy with the experimental evaluation using 6 combinatorial optimization problems.
 - Ryo Kuroiwa and J. Christopher Beck. [Solving Domain-Independent Dynamic Programming Problems with Anytime Heuristic Search.](https://ojs.aaai.org/index.php/ICAPS/article/view/27201/26974) In Proceedings of the 33rd International Conference on Automated Planning and Scheduling (ICAPS). 2023. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Anytime_ICAPS23.pdf) [slides](./pdfs/anytime_icaps2023.pdf)
   - This paper proposes 6 anytime solvers for DIDP with the experimental evaluation using 9 combinatorial optimization problems.
-- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) In Proceedings of the 29th International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
+- Ryo Kuroiwa and J. Christopher Beck. [Large Neighborhood Beam Search for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/opus/volltexte/2023/19060/pdf/LIPIcs-CP-2023-23.pdf) 29th International Conference on Principles and Practice of Constraint Programming (CP). 2023. [slides](./pdfs/lnbs_cp2023.pdf) [poster](./pdfs/lnbs_poster_cp2023.pdf)
   - This paper proposes a large neighborhood search framework for DIDP based on beam search.
 - Ryo Kuroiwa and J. Christopher Beck. [Parallel Beam Search Algorithms for Domain-Independent Dynamic Programming.](https://ojs.aaai.org/index.php/AAAI/article/view/30062/31869) In Proceedings of the 38th Annual AAAI Conference on Artificial Intelligence (AAAI). 2024. [supplement](https://tidel.mie.utoronto.ca/pubs/Appendix_Parallel_AAAI24.pdf) [slides](./pdfs/parallel_aaai2024.pdf) [poster](./pdfs/parallel_poster_aaai2024.pdf)
   - This paper develops multi-thread DIDP solvers based on parallel beam search algorithms.
-  - Errata: In Algorithm 8, `|L| < k` should be added in the while loop condition. This condition is used in the implementation but was forgotten in the pseudo-code.  
-- Ryo Kuroiwa and J. Christopher Beck. [RPID: Rust Programmable Interface for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.23/LIPIcs.CP.2025.23.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025 [slides](./pdfs/RPID-CP2025.pdf)
+  - Errata: In Algorithm 8, `|L| < k` should be added in the while loop condition. This condition is used in the implementation, but was forgotten in the pseudo-code.  
+- Ryo Kuroiwa and J. Christopher Beck. [RPID: Rust Programmable Interface for Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.23/LIPIcs.CP.2025.23.pdf) 31st International Conference on Principles and Practice of Constraint Programming (CP 2025). 2025 [slides](./pdfs/RPID-CP2025.pdf)
   - This paper introduces RPID.
-- J. Christopher Beck, Ryo Kuroiwa, Jimmy H.M. Lee, Peter J. Stuckey, and Allen Z. Zhong. [Transition Dominance in Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.5/LIPIcs.CP.2025.5.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025.
+- J. Christopher Beck, Ryo Kuroiwa, Jimmy H.M. Lee, Peter J. Stuckey, and Allen Z. Zhong. [Transition Dominance in Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.5/LIPIcs.CP.2025.5.pdf) 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025.
   - This paper introduces state functions and the transition dominance interface.
 - Ryo Kuroiwa and J. Christopher Beck. [Domain-Independent Dynamic Programming.](https://arxiv.org/abs/2401.13883) Artificial Intelligence. 2026.
   - This paper formally defines and theoretically analyzes DyPDL and heuristic search solvers for DIDP, extending the two ICAPS papers. The experimental evaluation uses 11 combinatorial optimization problems.
+- Imko Marijnissen, Emir Demirovi, J. Christopher Beck, and Ryo Kuroiwa: [Domain-Independent Dynamic Programming with Constraint Propagation.](https://arxiv.org/pdf/2603.16648) Proceedings of the 36th International Conference on Automated Planning and Scheduling (ICAPS). 2026.
+  - This paper combines DIDP modeling with global constraints in constraint programming and uses constraint propagation with state space search.
+- Anubhav Singh, Florian Pommerening, Tanja Schindler, J. Christopher Beck, and Malte Helmert: [Operator-Counting Heuristics for Domain-Independent Dynamic Programming.](https://ai.dmi.unibas.ch/papers/singh-et-al-icaps2026.pdf) Proceedings of the 36th International Conference on Automated Planning and Scheduling (ICAPS). 2026.
+- Yuxiao Chen and J. Christopher Beck. Linear-Memory Beam Search Algorithms in Domain-Independent Dynamic Programming. 32nd International Conference on Principles and Practice of Constraint Programming (CP 2026). 2026.
+- Fabio Giordana, Zeynep Kiziltan, and Ryo Kuroiwa. GRID: Graph-based Modelling Interface for Domain-Independent Dynamic Programming. 32nd International Conference on Principles and Practice of Constraint Programming (CP 2026). 2026
+  - This paper introduces GRID.
+
 
 ### Papers using DIDP
 
-- Arnoosh Golestanian, Giovanni Lo Bianco, Chengyu Tao, and J. Christopher Beck. [Optimization Models for Pickup and Delivery Problems with Reconfigurable Capacities.](https://tidel.mie.utoronto.ca/pubs/Golestanian_CP2023.pdf) In Proceedings of the 29th International Conference on Principles and Practice of Constraint Programming (CP). 2023.
+- Arnoosh Golestanian, Giovanni Lo Bianco, Chengyu Tao, and J. Christopher Beck. [Optimization Models for Pickup and Delivery Problems with Reconfigurable Capacities.](https://tidel.mie.utoronto.ca/pubs/Golestanian_CP2023.pdf) 29th International Conference on Principles and Practice of Constraint Programming (CP 2023). 2023.
   - DIDP beats MIP and CP in a pickup and delivery problem with complicated capacity constraints inspired by a real-world application.
-- Jiacheng Zhang and J. Christopher Beck. [Solving LBBD Master Problems with Constraint Programming and Domain-Independent Dynamic Programming](https://drops.dagstuhl.de/storage/00lipics/lipics-vol307-cp2024/LIPIcs.CP.2024.32/LIPIcs.CP.2024.32.pdf). In Proceedings of the 30th International Conference on Principles and Practice of Constraint Programming (CP). 2024.
+- Jiacheng Zhang and J. Christopher Beck. [Solving LBBD Master Problems with Constraint Programming and Domain-Independent Dynamic Programming](https://drops.dagstuhl.de/storage/00lipics/lipics-vol307-cp2024/LIPIcs.CP.2024.32/LIPIcs.CP.2024.32.pdf). 30th International Conference on Principles and Practice of Constraint Programming (CP 2024). 2024.
   - This paper proposes a Bender's decomposition method using DIDP as a master problem formulation.
 - Jiacheng Zhang and J. Christopher Beck. [Domain-Independent Dynamic Programming and Constraint Programming Approaches for Assembly Line Balancing Problems with Setups](https://pubsonline.informs.org/doi/full/10.1287/ijoc.2024.0603). INFORMS Journal on Computing 2024. [post-print](https://tidel.mie.utoronto.ca/pubs/sualbp_ijoc_postprint.pdf)
   - DIDP models for SUALBP-1 and SUALBP-2, variants of assembly line balancing problems, are proposed, and they outperform MIP and CP models.
@@ -66,8 +76,11 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
   - DIDP models for the quadratic traveling salesman problem (QTSP) are better than MIP, branch-and-cut, and CP in finding better solutions for large-scale instances.
 - Minori Narita, Ryo Kuroiwa, and J. Christopher Beck. [Reinforcement Learning-Based Heuristics to Guide Domain-Independent Dynamic Programming.](https://link.springer.com/chapter/10.1007/978-3-031-95976-9_9) In Integration of Constraint Programming, Artificial Intelligence, and Operations Research. CPAIOR 2025. 2025.
   - DIDP solvers are combined with reinforcement learning-based heuristic functions to guide search.
-- Daniel Pekar and J. Christopher Beck. [Exact Methods for the Travelling Salesperson Problem with Self-Deleting Graphs.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.30/LIPIcs.CP.2025.30.pdf) In Proceedings of the 31st International Conference on Principles and Practice of Constraint Programming (CP). 2025
+- Daniel Pekar and J. Christopher Beck. [Exact Methods for the Travelling Salesperson Problem with Self-Deleting Graphs.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.30/LIPIcs.CP.2025.30.pdf) 31st International Conference on Principles and Practice of Constraint Programming (CP 2025). 2025
   - DIDP outperforms MIP and CP in the traveling salesperson problem with self-deleting graphs.
+- Ryo Kuroiwa and Edward Lam. [Column Generation with Domain-Independent Dynamic Programming.](https://ed-lam.com/papers/cgdidp2026.pdf) 32nd International Conference on Principles and Practice of Constraint Programming (CP 2026). 2026
+  - DIDP is used to solve pricing subproblems in column generation, outperforming approaches using general-purpose MIP and CP solvers for pricing.
+
   
 ## Presentations
 

@@ -24,6 +24,7 @@ All of the above software is managed on [our GitHub repository](https://github.c
 ### Software Using DIDP
 
 - [Discrete Optimization](https://github.com/airbus/discrete-optimization): a Python library providing models and solvers for combinatorial optimization problems such as routing and scheduling, maintained by Airbus. It uses DIDPPy as one of the backends.
+- [MCP Solver](https://github.com/szeider/mcp-solver): a coding agent to implement models for combinatorial solvers. DIDPPy is used as one of the backend solvers.
 
 ### DIDP Model Code
 - [didp-models](https://github.com/Kurorororo/didp-models): DIDP model code used in our papers published in 2023 and 2024.

@@ -82,7 +82,7 @@ Currently, [our generic DIDP solvers](https://crates.io/crates/dypdl-heuristic-s
 - Daniel Pekar and J. Christopher Beck. [Exact Methods for the Travelling Salesperson Problem with Self-Deleting Graphs.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol340-cp2025/LIPIcs.CP.2025.30/LIPIcs.CP.2025.30.pdf) 31st International Conference on Principles and Practice of Constraint Programming (CP 2025). 2025
   - DIDP outperforms MIP and CP in the traveling salesperson problem with self-deleting graphs.
 - Ryo Kuroiwa and Edward Lam. [Column Generation with Domain-Independent Dynamic Programming.](https://drops.dagstuhl.de/storage/00lipics/lipics-vol379-cp2026/LIPIcs.CP.2026.37/LIPIcs.CP.2026.37.pdf) 32nd International Conference on Principles and Practice of Constraint Programming (CP 2026). 2026
-  - DIDP is used to solve pricing subproblems in column generation, outperforming approaches using general-purpose MIP and CP solvers for pricing.
+  - DIDP is used to solve pricing subproblems in column generation, outperforming approaches using general-purpose MIP and CP solvers for pricing. [slides](./pdfs/cg_cp2026.pdf)
 - Ryo Kuroiwa, Yuji Shinano, and J.Christopher Beck. [Massively Parallel and Distributed Solvers for Domain-Independent Dynamic Programming.](https://opus4.kobv.de/opus4-zib/files/10320/ZIB_Report_26-03.pdf) ZIB-Report. 2026
   - This work develops massively parallel and distributed DIDP solvers that scale with up to 49,152 CPU cores.
 
